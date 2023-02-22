@@ -1,0 +1,107 @@
+@import url('https://fonts.cdnfonts.com/css/proxima-nova-2');
+@import './Variables/Variables.scss';
+
+.NavBar {
+    min-width: 380px;
+    max-width: 420px;
+    background-color: $blackColor;
+    min-height: 92%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    padding-left: 20px;
+
+    .navBarMenu-1 {
+        background-color: $blackColor;
+        min-width: 100%;
+        min-height: 10%;
+
+        .SpotifyLogo {
+            margin-top: 20px;
+            width: 35%;
+            height: 45%;
+        }
+    }
+
+    .navBarMenu-2 {
+        background-color: $blackColor;
+        min-width: 100%;
+        min-height: 15%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+        font-size: 0.75rem;
+
+        .iconsNavBar {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            color: $whiteTColor;
+            gap: 10px;
+            &:hover {
+                cursor: pointer;
+                color: $whiteColor;
+            }
+            .imgNav {
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+
+    .navBarMenu-3 {
+        border-top: 1px solid rgba(246, 246, 246, 0.1);
+        padding-top: 30px;
+        background-color: rgb(78, 157, 157);
+        min-width: 100%;
+        min-height: 55%;
+        background-color: $blackColor;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        font-size: 0.75rem;
+        &:hover {
+            overflow-y: scroll;
+        }
+
+        .itemPlayList {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            color: $whiteTColor;
+            gap: 10px;
+            &:hover {
+                cursor: pointer;
+                color: $whiteColor;
+            }
+        }
+    }
+
+    .navBarInstallAppBox {
+        background-color: $blackColor;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.75rem;
+        min-width: 100%;
+        height: 5%;
+        gap: 15px;
+        font-weight: 600;
+        margin-top: 10px;
+
+        .itemPlayList {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            color: $whiteTColor;
+            gap: 10px;
+            &:hover {
+                cursor: pointer;
+                color: $whiteColor;
+            }
+        }
+    }
+  
+}

@@ -1,0 +1,19 @@
+@import url('https://fonts.cdnfonts.com/css/proxima-nova-2');
+@import './Variables/Variables.scss';
+
+.NoPageFoundContainer {
+    background-color: $grayColor;
+    height: 93%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: $whiteColor;
+    gap: 25px;
+}
+
+
+Link {
+    color: white;
+    text-decoration: none;
+}

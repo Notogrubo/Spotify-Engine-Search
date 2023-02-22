@@ -1,0 +1,96 @@
+@import url("https://fonts.cdnfonts.com/css/proxima-nova-2");
+.NavBar {
+  min-width: 380px;
+  max-width: 420px;
+  background-color: rgb(0, 0, 0);
+  min-height: 92%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  padding-left: 20px;
+}
+.NavBar .navBarMenu-1 {
+  background-color: rgb(0, 0, 0);
+  min-width: 100%;
+  min-height: 10%;
+}
+.NavBar .navBarMenu-1 .SpotifyLogo {
+  margin-top: 20px;
+  width: 35%;
+  height: 45%;
+}
+.NavBar .navBarMenu-2 {
+  background-color: rgb(0, 0, 0);
+  min-width: 100%;
+  min-height: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  font-size: 0.75rem;
+}
+.NavBar .navBarMenu-2 .iconsNavBar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  color: rgba(246, 246, 246, 0.698);
+  gap: 10px;
+}
+.NavBar .navBarMenu-2 .iconsNavBar:hover {
+  cursor: pointer;
+  color: rgb(246, 246, 246);
+}
+.NavBar .navBarMenu-2 .iconsNavBar .imgNav {
+  width: 20px;
+  height: 20px;
+}
+.NavBar .navBarMenu-3 {
+  border-top: 1px solid rgba(246, 246, 246, 0.1);
+  padding-top: 30px;
+  background-color: rgb(78, 157, 157);
+  min-width: 100%;
+  min-height: 55%;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-size: 0.75rem;
+}
+.NavBar .navBarMenu-3:hover {
+  overflow-y: scroll;
+}
+.NavBar .navBarMenu-3 .itemPlayList {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  color: rgba(246, 246, 246, 0.698);
+  gap: 10px;
+}
+.NavBar .navBarMenu-3 .itemPlayList:hover {
+  cursor: pointer;
+  color: rgb(246, 246, 246);
+}
+.NavBar .navBarInstallAppBox {
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.75rem;
+  min-width: 100%;
+  height: 5%;
+  gap: 15px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+.NavBar .navBarInstallAppBox .itemPlayList {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  color: rgba(246, 246, 246, 0.698);
+  gap: 10px;
+}
+.NavBar .navBarInstallAppBox .itemPlayList:hover {
+  cursor: pointer;
+  color: rgb(246, 246, 246);
+}/*# sourceMappingURL=NavBar.css.map */

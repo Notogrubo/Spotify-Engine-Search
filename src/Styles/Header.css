@@ -1,0 +1,110 @@
+@import url("https://fonts.cdnfonts.com/css/proxima-nova-2");
+.headerHome {
+  min-width: 100%;
+  height: 7%;
+  background-color: rgb(18, 18, 18);
+  display: flex;
+  align-items: center;
+}
+.headerHome .left-header-contianer {
+  min-width: 50%;
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding-left: 20px;
+}
+.headerHome .right-header-container {
+  min-width: 50%;
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 20px;
+}
+
+.headerSearch {
+  min-width: 100%;
+  height: 7%;
+  background-color: rgb(18, 18, 18);
+  display: flex;
+  align-items: center;
+}
+.headerSearch .left-header-contianer {
+  min-width: 50%;
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding-left: 20px;
+}
+.headerSearch .Form {
+  display: flex;
+  min-width: 47%;
+  min-height: 100%;
+  align-items: center;
+  background-color: white;
+  gap: 5px;
+  padding: 5px;
+  border-radius: 1.5rem;
+}
+.headerSearch .Form Input {
+  flex: 1;
+  min-width: 75%;
+  height: 35px;
+  border-radius: 0.8rem;
+  border: none;
+  color: rgb(0, 0, 0);
+  font-size: small;
+}
+.headerSearch .Form Input:focus {
+  outline: none;
+}
+.headerSearch .Form Input .inputIconRight {
+  padding-left: 5px;
+}
+.headerSearch .Form Input,
+.headerSearch .Form textarea {
+  background-color: white;
+}
+.headerSearch .Form svg:hover {
+  cursor: auto;
+}
+.headerSearch .right-header-container {
+  min-width: 50%;
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 20px;
+}
+
+.headerCollection {
+  min-width: 100%;
+  height: 7%;
+  background-color: rgb(18, 18, 18);
+  display: flex;
+  align-items: center;
+}
+.headerCollection .left-header-contianer {
+  min-width: 50%;
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding-left: 20px;
+}
+.headerCollection .left-header-contianer .headerLink {
+  color: rgb(246, 246, 246);
+  font-weight: 600;
+  font-size: 0.8rem;
+  display: flex;
+}
+.headerCollection .right-header-container {
+  min-width: 50%;
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 20px;
+}/*# sourceMappingURL=Header.css.map */
