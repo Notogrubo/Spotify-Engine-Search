@@ -3,32 +3,16 @@ import React, { useEffect, useState } from 'react';
 import { Route, Routes } from "react-router-dom";
 import Split from 'react-split';
 import { useDebounce } from './Hooks';
-import Content from './Layouts';
-import Header from './Layouts/';
-import Footer from './Layouts/';
-import NavBar from './Layouts/';
-import NoPageFound from './Pages/NoPageFound';
-import { getCurrentTime } from './Hooks';
+import { Footer, NavBar } from './Layouts';
+import  getCurrentTime   from './GetCurrentTime/GetCurrentTime';
 import { Artist, ArtistData } from './types';
+import {Home, Search, Collection, NoPageFound} from './Pages'
+
 import './Styles/App.css';
 
-const object = {
-    function : function x() {
-        console.log('2137')
-    }
-}
 
 
-class Halko {
 
-    function() {
-
-        console.log('2137')
-    }
-}
-
-const halko1 = new Halko()
-halko1.function()
 
 
 function App() {
@@ -171,59 +155,42 @@ function App() {
                     <Routes>
                         <Route
                             path='/'
-                            element={
-                                    [
-                                    <Header
-                                        setSearchInput={setSearchInput}
-                                        searchInput={searchInput}
-                                        mainClassName='headerHome'
-                                    />,
-                                    <Content
-                                        currentHour={currentHour}
-                                        apiArtist={artists}
-                                        searchInput={searchInput}
-                                        getArtistUsed={getArtistUsed}
-                                    />
-                                    ]
-                            }
+                            element = {<Home
+                            setSearchInput={setSearchInput}
+                            searchInput={searchInput}
+                            mainClassName='headerHome'
+                            currentHour={currentHour}
+                            apiArtist={artists}
+                            getArtistUsed={getArtistUsed}/>}
                         />
                   
                         <Route
                             path="/search"
                             element={
-                                    [
-                                    <Header
+                                    
+                                    <Search
                                         setSearchInput={setSearchInput}
                                         searchInput={searchInput}
                                         mainClassName='headerSearch'
-                            
-                                    />,
-                                    <Content
                                         currentHour={currentHour}
                                         apiArtist={artists}
-                                        searchInput={searchInput}
                                         getArtistUsed={getArtistUsed}
                                     />
-                                    ]
+                                    
                             }
                         />
                         <Route 
                             path='/collection/playlists'
                             element={
-                                [
-                                    <Header
+                                
+                                    <Collection
                                         setSearchInput={setSearchInput}
                                         searchInput={searchInput}
                                         mainClassName='headerCollection'
-                                    />,
-                                    <Content
                                         currentHour={currentHour}
                                         apiArtist={artists}
-                                        searchInput={searchInput}
                                         getArtistUsed={getArtistUsed}
-                                    />
-                                    ]
-
+                                    />                                
                             } />
 
 

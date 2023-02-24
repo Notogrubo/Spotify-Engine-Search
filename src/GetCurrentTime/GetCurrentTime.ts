@@ -8,3 +8,4 @@ export const getCurrentTime = (setDate: (hour: number) => void): NodeJS.Timer =>
 
 
 
+export default getCurrentTime

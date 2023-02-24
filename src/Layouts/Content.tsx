@@ -1,7 +1,7 @@
 import React from 'react';
 import '../Styles/Content.css';
 
-import ArtistList from '../Componets/ArtistList';
+import  { ArtistList } from '../Componets/';
 import { Artist } from '../types';
 
 

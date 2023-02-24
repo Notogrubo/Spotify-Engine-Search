@@ -2,15 +2,14 @@ import React from 'react';
 import '../Styles/Header.css';
 import { IoMdLogIn } from 'react-icons/io';
 import { TfiArrowCircleLeft, TfiArrowCircleRight } from 'react-icons/tfi';
-import Form from '../Componets/Form';
-import Button from '../Componets/Button';
+import { Form } from '../Componets';
+import { Button } from '../Componets';
 
 interface Props {
     setSearchInput : React.Dispatch<React.SetStateAction<string>>,
     searchInput : string,
     mainClassName : string 
 }
-
 
 function Header({ setSearchInput, searchInput, mainClassName } : Props) {
     return (
